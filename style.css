@@ -1,0 +1,15 @@
+.container {
+    padding: 20px;
+    max-width: 80vw;
+}
+
+.paddingNone {
+    padding: 0;
+}
+
+.currentTurn {
+    background-color: red;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}

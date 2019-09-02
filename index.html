@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="connect4.js"></script>
+
+    <title>Connect 4 - by Yarriva.com</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <h2>Connect 4</h2>
+        <p>
+            Simple exercise created with Bootstrap, CSS, and Javascript.</br>
+            Full code is here: <a href="">Github</a>
+        </p>
+        </br>
+
+        <div class="row">
+            <div class="col-xs-4"> </div>
+            <div class="col-xs-1 paddingNone"><img id="F1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="F7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3"><div class="currentTurn">Whose turn</div></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1 paddingNone"><img id="E1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="E7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4"> </div>
+            <div class="col-xs-1 paddingNone"><img id="D1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="D7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3"><button id="resetButton" type="button" class="btn btn-primary btn-block">New Game</button></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1 paddingNone"><img id="C1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="C7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4"> </div>
+            <div class="col-xs-1 paddingNone"><img id="B1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="B7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4"> </div>
+            <div class="col-xs-1 paddingNone"><img id="A1" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A2" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A3" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A4" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A5" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A6" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1 paddingNone"><img id="A7" class="img-responsive" src="images/empty.jpg"></div>
+            <div class="col-xs-1"> </div>
+        </div>
+
+        </br></br>
+        <p>Created by <a href="https://yarriva.com/">yarriva.com</a></p>
+    </div>
+
+</body>
+</html>
